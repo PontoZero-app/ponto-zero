@@ -1,0 +1,228 @@
+<!-- /termos.html -->
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Termos e Condições — Ponto Zero</title>
+  <meta name="description" content="Termos e Condições de Utilização da aplicação Ponto Zero." />
+  <style>
+    :root{
+      --bg:#0b1220;
+      --card:#0f1a2e;
+      --text:#e8eefc;
+      --muted:#a9b7d6;
+      --line:rgba(255,255,255,.10);
+      --accent:#39B7A8;
+      --accent2:#1FA89A;
+      --shadow:0 14px 40px rgba(0,0,0,.35);
+      --radius:18px;
+      --max:980px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Helvetica Neue";
+      background: radial-gradient(1100px 600px at 20% -10%, rgba(57,183,168,.22), transparent 55%),
+                  radial-gradient(900px 520px at 110% 10%, rgba(31,168,154,.18), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+      line-height:1.55;
+    }
+    a{color:inherit}
+    .wrap{max-width:var(--max); margin:0 auto; padding:28px 18px 48px}
+    .topbar{
+      display:flex; align-items:center; justify-content:space-between; gap:14px;
+      padding:14px 16px; border:1px solid var(--line); border-radius:999px;
+      background:rgba(15,26,46,.6); backdrop-filter: blur(10px);
+    }
+    .brand{display:flex; align-items:center; gap:10px; text-decoration:none}
+    .logo{
+      width:34px; height:34px; border-radius:10px;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      box-shadow: 0 10px 24px rgba(57,183,168,.25);
+    }
+    .brand strong{letter-spacing:.2px}
+    nav{display:flex; flex-wrap:wrap; gap:10px; justify-content:flex-end}
+    nav a{
+      text-decoration:none; font-size:14px; color:var(--muted);
+      padding:8px 10px; border-radius:999px; border:1px solid transparent;
+    }
+    nav a:hover{color:var(--text); border-color:var(--line); background:rgba(255,255,255,.03)}
+    header{padding:28px 6px 14px}
+    h1{margin:0; font-size:34px; letter-spacing:-.4px}
+    .sub{margin:8px 0 0; color:var(--muted)}
+    .card{
+      margin-top:18px;
+      background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:18px 18px;
+    }
+    h2{margin:18px 0 10px; font-size:18px}
+    p{margin:10px 0}
+    ul{margin:8px 0 10px 18px; color:var(--text)}
+    li{margin:6px 0; color:var(--muted)}
+    li strong{color:var(--text)}
+    .note{
+      margin-top:14px; padding:12px 14px; border-radius:14px;
+      border:1px solid var(--line); background:rgba(57,183,168,.08); color:var(--muted);
+    }
+    .footer{
+      margin-top:18px; padding-top:14px; border-top:1px solid var(--line);
+      color:var(--muted); font-size:14px;
+      display:flex; flex-wrap:wrap; gap:10px; justify-content:space-between;
+    }
+    .mono{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <a class="brand" href="index.html" aria-label="Voltar à página inicial">
+        <span class="logo" aria-hidden="true"></span>
+        <strong>Ponto Zero</strong>
+      </a>
+      <nav aria-label="Navegação">
+        <a href="index.html">Início</a>
+        <a href="funcionalidades.html">Funcionalidades</a>
+        <a href="privacidade.html">Privacidade</a>
+        <a href="cookies.html">Cookies</a>
+        <a href="termos.html" aria-current="page" style="color:var(--text); border-color:var(--line); background:rgba(255,255,255,.03)">Termos</a>
+        <a href="suporte.html">Suporte</a>
+      </nav>
+    </div>
+
+    <header>
+      <h1>Termos e Condições de Utilização</h1>
+      <p class="sub">Última atualização: <span class="mono">2026-03-02</span></p>
+    </header>
+
+    <section class="card">
+      <p>
+        Estes Termos e Condições regulam a utilização da aplicação <strong>Ponto Zero</strong> (a “Aplicação”),
+        disponibilizada por <strong>Ricardo Santos</strong>, Portugal (o “Desenvolvedor”).
+        Ao instalar, aceder ou utilizar a Aplicação, o utilizador (“Utilizador”) declara que leu, compreendeu e aceita estes Termos.
+      </p>
+
+      <h2>1. Finalidade da aplicação</h2>
+      <p>O Ponto Zero é uma ferramenta de <strong>organização financeira pessoal</strong>, que pode incluir funcionalidades como:</p>
+      <ul>
+        <li>Registo de receitas e despesas</li>
+        <li>Gestão de contas, património, poupanças e dívidas/empréstimos</li>
+        <li>Resumos e indicadores de organização financeira</li>
+        <li>Exportação/backup de dados</li>
+      </ul>
+      <p class="note">
+        A Aplicação <strong>não</strong> está ligada a instituições bancárias, nem acede a contas bancárias do Utilizador.
+      </p>
+
+      <h2>2. Ausência de aconselhamento</h2>
+      <p>
+        A Aplicação <strong>não</strong> fornece aconselhamento financeiro, fiscal, contabilístico ou recomendações de investimento.
+        Qualquer informação, resumo ou indicador apresentado é de natureza <strong>meramente organizacional</strong>.
+      </p>
+      <p>
+        Todas as decisões tomadas com base nos dados inseridos ou apresentados são da <strong>inteira responsabilidade do Utilizador</strong>.
+      </p>
+
+      <h2>3. Conta, dispositivo e responsabilidade do Utilizador</h2>
+      <p>O Utilizador é responsável por:</p>
+      <ul>
+        <li><strong>Inserir dados corretos</strong> e verificar a exatidão dos registos</li>
+        <li>Manter o dispositivo protegido (PIN do sistema, biometria do sistema, bloqueio de ecrã, etc.)</li>
+        <li>Gerir as opções de segurança internas (ex.: <strong>PIN</strong> e, quando disponível, <strong>biometria</strong>)</li>
+        <li>Efetuar <strong>backups</strong> caso pretenda conservar/restaurar dados</li>
+      </ul>
+
+      <h2>4. Armazenamento local, backups e perda de dados</h2>
+      <p>
+        Os dados são armazenados <strong>localmente no dispositivo</strong> do Utilizador. A Aplicação não mantém, por defeito,
+        servidores próprios com dados financeiros do Utilizador.
+      </p>
+      <p>
+        O Ponto Zero pode disponibilizar funcionalidades de backup/exportação.
+        Os backups podem ser <strong>manuais</strong> e, em determinadas versões/planos (ex.: Premium), podem existir opções de
+        <strong>backup automático</strong> que o Utilizador pode ativar/desativar.
+      </p>
+      <p>
+        O Desenvolvedor não é responsável por perda de dados resultante de, entre outros:
+      </p>
+      <ul>
+        <li>Desinstalação da Aplicação</li>
+        <li>Falhas do dispositivo ou do sistema operativo</li>
+        <li>Roubo, perda ou dano físico do equipamento</li>
+        <li>Limpeza de armazenamento pelo sistema</li>
+        <li>Ausência de backup</li>
+      </ul>
+      <p class="note">
+        Não é possível garantir a recuperação de dados apagados.
+      </p>
+
+      <h2>5. Segurança (PIN e biometria)</h2>
+      <p>
+        A Aplicação pode incluir mecanismos de proteção local (ex.: PIN e biometria).
+        Estes mecanismos destinam-se a <strong>proteção básica local</strong> e não constituem um sistema inviolável.
+      </p>
+      <p>
+        A segurança física do dispositivo e o controlo de acesso ao mesmo são da responsabilidade do Utilizador.
+      </p>
+
+      <h2>6. Funcionalidades Premium e compras</h2>
+      <p>
+        Algumas funcionalidades podem estar disponíveis mediante pagamento (ex.: Premium/Pro).
+        As compras, quando aplicável, são processadas pela loja oficial do dispositivo (Google Play / Apple App Store).
+      </p>
+      <ul>
+        <li>O Desenvolvedor não tem acesso a dados de pagamento</li>
+        <li>Reembolsos seguem as políticas da respetiva loja</li>
+        <li>O acesso a funcionalidades pode ser ajustado em futuras versões</li>
+      </ul>
+
+      <h2>7. Disponibilidade, alterações e descontinuação</h2>
+      <p>
+        O Ponto Zero pode ser atualizado, modificado, melhorado ou descontinuado a qualquer momento.
+        Funcionalidades e preços podem alterar-se entre versões.
+      </p>
+
+      <h2>8. Limitação de responsabilidade</h2>
+      <p>
+        Na máxima extensão permitida por lei, o Desenvolvedor não será responsável por perdas financeiras, danos indiretos,
+        decisões tomadas com base na informação da Aplicação, erros introduzidos pelo Utilizador, falhas do dispositivo/sistema operativo
+        ou incompatibilidades técnicas futuras.
+      </p>
+
+      <h2>9. Propriedade intelectual</h2>
+      <p>
+        Todos os direitos relativos à Aplicação Ponto Zero (incluindo design, estrutura, código, identidade visual e nome)
+        pertencem ao Desenvolvedor. É proibida a reprodução/redistribuição sem autorização.
+      </p>
+
+      <h2>10. Privacidade</h2>
+      <p>
+        A utilização da Aplicação está também sujeita à <a href="privacidade.html">Política de Privacidade</a>.
+      </p>
+
+      <h2>11. Lei aplicável</h2>
+      <p>Estes Termos regem-se pela legislação portuguesa. Em caso de litígio, aplica-se o foro legalmente competente em Portugal.</p>
+
+      <h2>12. Contacto</h2>
+      <p>
+        Suporte e questões legais:
+        <a href="mailto:suporte.app.pontozero@gmail.com"><strong>suporte.app.pontozero@gmail.com</strong></a>
+      </p>
+
+      <p class="note">
+        Ao utilizar a Aplicação, o Utilizador concorda com estes Termos e Condições.
+      </p>
+
+      <div class="footer">
+        <span>© <span class="mono">2026</span> Ponto Zero</span>
+        <span class="mono">suporte.app.pontozero@gmail.com</span>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
