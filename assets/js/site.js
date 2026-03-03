@@ -27,12 +27,13 @@
   }
 
   function footerLinksHtml() {
-    // No teu print do rodapé aparecem estes 4:
+    // No teu print do rodapé aparecem estes 5:
     const links = [
-      { href: "termos.html", label: "Termos" },
-      { href: "privacidade.html", label: "Privacidade" },
-      { href: "cookies.html", label: "Cookies" },
+      { href: "index.html", label: "Início" },
       { href: "suporte.html", label: "Suporte" },
+      { href: "termos.html", label: "Termos" },
+      { href: "cookies.html", label: "Cookies" },
+      { href: "privacidade.html", label: "Privacidade" },
     ];
     return links.map(l => `<a href="${l.href}">${l.label}</a>`).join("");
   }
