@@ -1,153 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ponto Zero — Controlo Financeiro</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ponto Zero — Controlo Financeiro</title>
+  <meta name="description" content="O controlo financeiro começa aqui. Organização financeira simples e privada, offline-first, sem anúncios e sem recolha de dados pessoais." />
 
-<style>
-body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-    background-color: #ffffff;
-    color: #111111;
-}
-
-header {
-    padding: 20px 40px;
-    border-bottom: 1px solid #eeeeee;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav a {
-    text-decoration: none;
-    color: #111111;
-    margin-left: 20px;
-    font-size: 14px;
-}
-
-nav a:hover {
-    opacity: 0.6;
-}
-
-.hero {
-    text-align: center;
-    padding: 100px 20px;
-}
-
-.hero h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    font-size: 20px;
-    color: #555555;
-    margin-bottom: 40px;
-}
-
-.button {
-    display: inline-block;
-    padding: 14px 28px;
-    background-color: #111111;
-    color: #ffffff;
-    text-decoration: none;
-    border-radius: 6px;
-    font-size: 14px;
-}
-
-.button:hover {
-    background-color: #333333;
-}
-
-section {
-    padding: 80px 20px;
-    text-align: center;
-    max-width: 900px;
-    margin: auto;
-}
-
-section h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-}
-
-section p {
-    font-size: 18px;
-    color: #555555;
-    line-height: 1.6;
-}
-
-footer {
-    border-top: 1px solid #eeeeee;
-    padding: 40px 20px;
-    text-align: center;
-    font-size: 14px;
-    color: #777777;
-}
-
-footer a {
-    color: #777777;
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-</style>
+  <!-- Estilos globais (igual em todas as páginas) -->
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
 <body>
+  <!-- Cabeçalho global injetado pelo site.js -->
+  <header id="site-header"></header>
 
-<header>
-    <nav>
-        <div><strong>Ponto Zero</strong></div>
-        <div>
-            <a href="funcionalidades.html">Funcionalidades</a>
-            <a href="suporte.html">Suporte</a>
-            <a href="privacidade.html">Privacidade</a>
-            <a href="termos.html">Termos</a>
-        </div>
-    </nav>
-</header>
+  <main class="wrap">
+    <section class="hero">
+      <h1>O controlo financeiro começa aqui.</h1>
+      <p class="lead">
+        Organiza o teu dinheiro com clareza, sem anúncios, sem contas externas e sem recolha de dados pessoais.
+      </p>
 
-<div class="hero">
-    <h1>O controlo financeiro começa aqui.</h1>
-    <p>Organiza o teu dinheiro com clareza, sem anúncios, sem contas externas e sem recolha de dados pessoais.</p>
-    <a href="#" class="button">Instalar App</a>
-</div>
+      <!-- Troca o href quando tiveres o link da loja -->
+      <div class="cta">
+        <a href="#" class="btn">Instalar App</a>
+      </div>
+    </section>
 
-<section>
-    <h2>Clareza total</h2>
-    <p>
+    <section class="section">
+      <h2>Clareza total</h2>
+      <p>
         O Ponto Zero mostra a tua situação financeira real num só lugar.
         Regista receitas, controla despesas, acompanha poupanças e gere dívidas —
         tudo de forma simples e privada.
-    </p>
-</section>
+      </p>
+    </section>
 
-<section>
-    <h2>Privacidade primeiro</h2>
-    <p>
+    <section class="section">
+      <h2>Privacidade primeiro</h2>
+      <p>
         A aplicação funciona totalmente offline.
         Nenhum dado é enviado para servidores.
         Tu és o único dono da tua informação financeira.
-    </p>
-</section>
+      </p>
+    </section>
+  </main>
 
-<footer>
-    © 2026 Ponto Zero — Ricardo Santos — Portugal <br><br>
-    <a href="privacidade.html">Política de Privacidade</a> |
-    <a href="termos.html">Termos e Condições</a> |
-    <a href="cookies.html">Política de Cookies</a> |
-    <a href="suporte.html">Suporte</a>
-</footer>
+  <!-- Rodapé global injetado pelo site.js -->
+  <footer id="site-footer"></footer>
 
+  <!-- Script global (cabeçalho + rodapé + página ativa) -->
+  <script src="assets/js/site.js"></script>
 </body>
 </html>
