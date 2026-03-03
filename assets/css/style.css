@@ -6,6 +6,12 @@
   --link:#111827;
   --link-muted:#6b7280;
   --max: 980px;
+
+  /* extras para botões/hero */
+  --primary:#111827;
+  --primary-hover:#374151;
+  --soft:#f9fafb;
+  --radius:12px;
 }
 
 /* Base */
@@ -95,7 +101,7 @@ h1{
 }
 
 .summary{
-  background: #f9fafb;
+  background: var(--soft);
   border: 1px solid var(--line);
   border-radius: 10px;
   padding: 14px 14px;
@@ -115,7 +121,94 @@ li span.muted{ color: var(--muted); }
 a{ color: #2563eb; }
 a:hover{ text-decoration: underline; }
 
-/* Footer (com atalhos como na Privacidade) */
+/* =========================================================
+   INDEX / LANDING (Hero + botões + secções)
+   ========================================================= */
+
+.hero{
+  padding: 54px 0 22px;
+  text-align:center;
+}
+.hero h1{
+  margin: 0 0 10px;
+  font-size: 44px;
+  letter-spacing: -0.6px;
+}
+.hero .lead{
+  margin: 0 auto;
+  max-width: 740px;
+  font-size: 18px;
+  color: var(--muted);
+}
+.cta{
+  margin-top: 18px;
+  display:flex;
+  justify-content:center;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding: 12px 18px;
+  border-radius: 10px;
+  border: 1px solid var(--primary);
+  background: var(--primary);
+  color:#fff;
+  text-decoration:none;
+  font-weight:600;
+  font-size:14px;
+  line-height:1;
+  transition: transform .06s ease, background .2s ease, border-color .2s ease;
+}
+.btn:hover{
+  background: var(--primary-hover);
+  border-color: var(--primary-hover);
+  text-decoration:none;
+}
+.btn:active{ transform: translateY(1px); }
+
+.btn.secondary{
+  background: #fff;
+  color: var(--primary);
+  border-color: var(--line);
+}
+.btn.secondary:hover{
+  border-color: var(--primary);
+  background: #fff;
+}
+
+/* secções da landing */
+.section{
+  margin-top: 24px;
+  text-align:left;
+}
+.section h2{
+  margin: 0 0 8px;
+  font-size: 22px;
+}
+.section p{
+  margin: 0;
+  color: var(--muted);
+  font-size: 16px;
+  max-width: 860px;
+}
+
+/* bloco “card” opcional */
+.card{
+  background: var(--soft);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 16px;
+  margin-top: 18px;
+}
+
+/* =========================================================
+   Footer (com atalhos como na Privacidade)
+   ========================================================= */
+
 .site-footer{
   border-top: 1px solid var(--line);
   background:#fff;
@@ -144,6 +237,11 @@ a:hover{ text-decoration: underline; }
 .footer-links a:hover{ color: var(--link); }
 
 /* Pequenos ajustes mobile */
+@media (max-width: 720px){
+  .hero{ padding: 42px 0 18px; }
+  .hero h1{ font-size: 34px; }
+  .hero .lead{ font-size: 16px; }
+}
 @media (max-width: 520px){
   h1{ font-size: 28px; }
   .topbar{ gap:10px; }
