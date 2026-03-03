@@ -5,6 +5,7 @@
     { href: "termos.html", label: "Termos", key: "termos" },
     { href: "cookies.html", label: "Cookies", key: "cookies" },
     { href: "privacidade.html", label: "Privacidade", key: "privacidade" },
+    { href: "funcionalidades.html", label: "Funcionalidades", key: "funcionalidades" }
   ];
 
   function currentKey() {
@@ -15,6 +16,7 @@
     if (file.startsWith("termos")) return "termos";
     if (file.startsWith("cookies")) return "cookies";
     if (file.startsWith("privacidade")) return "privacidade";
+    if (file.startsWith("funcionalidades")) return "funcionalidades";
     return "index";
   }
 
@@ -34,6 +36,7 @@
       { href: "termos.html", label: "Termos" },
       { href: "cookies.html", label: "Cookies" },
       { href: "privacidade.html", label: "Privacidade" },
+      { href: "funcionalidades.html", label: "Funcionalidades" }
     ];
     return links.map(l => `<a href="${l.href}">${l.label}</a>`).join("");
   }
