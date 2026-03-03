@@ -5,133 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Política de Privacidade — Ponto Zero</title>
   <meta name="description" content="Política de Privacidade da aplicação Ponto Zero." />
-  <style>
-    :root{
-      --bg:#ffffff;
-      --text:#111827;
-      --muted:#6b7280;
-      --border:#e5e7eb;
-      --card:#f9fafb;
-      --link:#2563eb;
-    }
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family: Arial, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, sans-serif;
-      color:var(--text);
-      background:var(--bg);
-      line-height:1.55;
-    }
-    header{
-      border-bottom:1px solid var(--border);
-      background:#fff;
-    }
-    .wrap{
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 18px 16px;
-    }
-    .top{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:12px;
-      flex-wrap:wrap;
-    }
-    .brand{
-      display:flex;
-      align-items:baseline;
-      gap:10px;
-    }
-    .brand h1{
-      font-size: 18px;
-      margin:0;
-      letter-spacing:0.3px;
-    }
-    .brand span{
-      font-size: 12px;
-      color:var(--muted);
-    }
-    nav a{
-      color:var(--muted);
-      text-decoration:none;
-      margin-left: 14px;
-      font-size: 14px;
-    }
-    nav a:hover{ color:var(--link); }
-    main{ padding: 22px 0 34px; }
-    .title{
-      margin: 0 0 6px 0;
-      font-size: 26px;
-      letter-spacing:0.2px;
-    }
-    .updated{
-      margin:0 0 18px 0;
-      color:var(--muted);
-      font-size: 14px;
-    }
-    .card{
-      background:var(--card);
-      border:1px solid var(--border);
-      border-radius: 12px;
-      padding: 14px 14px;
-      margin: 14px 0 18px;
-    }
-    h2{
-      margin: 18px 0 8px;
-      font-size: 18px;
-    }
-    p{ margin: 8px 0; }
-    ul{ margin: 8px 0 8px 20px; }
-    li{ margin: 6px 0; }
-    .muted{ color:var(--muted); }
-    a{ color:var(--link); }
-    footer{
-      border-top:1px solid var(--border);
-      background:#fff;
-    }
-    .footergrid{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:12px;
-      flex-wrap:wrap;
-    }
-    .small{ font-size: 13px; color:var(--muted); }
-    .links a{ margin-right: 14px; }
-  </style>
+
+  <!-- Estilos globais (igual em todas as páginas) -->
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
 <body>
-  <header>
-    <div class="wrap top">
-      <div class="brand">
-        <h1>Ponto Zero</h1>
-        <span>Site oficial</span>
-      </div>
-      <nav>
-        <a href="index.html">Início</a>
-        <a href="suporte.html">Suporte</a>
-        <a href="termos.html">Termos</a>
-        <a href="cookies.html">Cookies</a>
-        <a href="privacidade.html" aria-current="page" style="color:#111827;font-weight:700;">Privacidade</a>
-      </nav>
+  <!-- Cabeçalho global injetado pelo site.js -->
+  <header id="site-header"></header>
+
+  <main class="wrap">
+    <h1>Política de Privacidade</h1>
+    <p class="sub">Última atualização: 01 de Março de 2026</p>
+
+    <div class="summary">
+      <p><strong>Resumo:</strong> A aplicação Ponto Zero funciona em modo <strong>offline-first</strong>. Os dados são guardados no teu dispositivo. A app <strong>não</strong> cria contas, <strong>não</strong> recolhe dados pessoais e <strong>não</strong> envia dados financeiros para servidores.</p>
     </div>
-  </header>
 
-  <main>
-    <div class="wrap">
-      <h1 class="title">Política de Privacidade</h1>
-      <p class="updated">Última atualização: 01 de Março de 2026</p>
-
-      <div class="card">
-        <p><strong>Resumo:</strong> A aplicação Ponto Zero funciona em modo <strong>offline-first</strong>. Os dados são guardados no teu dispositivo. A app <strong>não</strong> cria contas, <strong>não</strong> recolhe dados pessoais e <strong>não</strong> envia dados financeiros para servidores.</p>
-      </div>
-
+    <section class="section">
       <h2>1. Responsável pelo tratamento</h2>
       <p><strong>Ricardo Santos</strong> — Portugal</p>
       <p>Email: <a href="mailto:suporte.app.pontozero@gmail.com">suporte.app.pontozero@gmail.com</a></p>
+    </section>
 
+    <section class="section">
       <h2>2. Princípio fundamental da aplicação</h2>
       <p>A aplicação Ponto Zero foi desenvolvida segundo os princípios de:</p>
       <ul>
@@ -139,6 +36,7 @@
         <li>Minimização de dados</li>
         <li>Armazenamento local</li>
       </ul>
+
       <p>A aplicação:</p>
       <ul>
         <li>Não cria contas</li>
@@ -153,8 +51,11 @@
         <li>Não integra rastreadores</li>
         <li>Não partilha dados com terceiros</li>
       </ul>
-      <p>A aplicação funciona de forma <strong>offline-first</strong>, sendo totalmente utilizável sem ligação à internet.</p>
 
+      <p>A aplicação funciona de forma <strong>offline-first</strong>, sendo totalmente utilizável sem ligação à internet.</p>
+    </section>
+
+    <section class="section">
       <h2>3. Dados armazenados</h2>
       <p>Todos os dados introduzidos pelo utilizador são armazenados exclusivamente no dispositivo.</p>
       <p>Exemplos de dados guardados localmente:</p>
@@ -169,7 +70,9 @@
         <li>Definições de segurança (PIN e biometria)</li>
       </ul>
       <p>O desenvolvedor não tem acesso a estes dados.</p>
+    </section>
 
+    <section class="section">
       <h2>4. Segurança e autenticação</h2>
       <p><strong>PIN:</strong> o PIN é armazenado localmente utilizando mecanismos de armazenamento seguro disponibilizados pelo sistema operativo do dispositivo.</p>
       <p><strong>Biometria:</strong> a autenticação biométrica (impressão digital ou reconhecimento facial):</p>
@@ -178,12 +81,16 @@
         <li>A aplicação não recebe nem armazena dados biométricos.</li>
         <li>Apenas recebe confirmação de sucesso ou falha da autenticação.</li>
       </ul>
+    </section>
 
+    <section class="section">
       <h2>5. Ligações à internet</h2>
       <p>A aplicação não necessita de ligação à internet para funcionar.</p>
       <p>Nenhum dado financeiro é transmitido online.</p>
       <p>A aplicação pode abrir ligações externas (por exemplo, para o website oficial). Ao sair da aplicação, aplicam-se as políticas de privacidade do respetivo website.</p>
+    </section>
 
+    <section class="section">
       <h2>6. Backups e exportação de dados</h2>
       <p>A aplicação permite ao utilizador efetuar backups dos seus dados.</p>
 
@@ -202,7 +109,9 @@
         <li>Nenhum ficheiro é enviado para servidores do desenvolvedor.</li>
         <li>O utilizador continua a ser responsável pela gestão e armazenamento dos ficheiros gerados.</li>
       </ul>
+    </section>
 
+    <section class="section">
       <h2>7. Permissões do dispositivo</h2>
       <p>A aplicação pode solicitar permissões apenas para:</p>
       <ul>
@@ -210,7 +119,9 @@
         <li>Utilização de biometria (se ativada pelo utilizador)</li>
       </ul>
       <p>Nenhuma permissão é utilizada para recolha de dados pessoais ou rastreamento.</p>
+    </section>
 
+    <section class="section">
       <h2>8. Retenção dos dados</h2>
       <p>Os dados permanecem no dispositivo até que o utilizador:</p>
       <ul>
@@ -219,7 +130,9 @@
         <li>Desinstale a aplicação</li>
       </ul>
       <p>O desenvolvedor não mantém qualquer cópia externa dos dados.</p>
+    </section>
 
+    <section class="section">
       <h2>9. Direitos do utilizador (RGPD)</h2>
       <p>Como os dados não são transmitidos ao desenvolvedor, os direitos podem ser exercidos diretamente no dispositivo:</p>
       <ul>
@@ -228,11 +141,15 @@
         <li>Direito ao apagamento — eliminar dados ou desinstalar</li>
         <li>Direito à portabilidade — exportar backup</li>
       </ul>
+    </section>
 
+    <section class="section">
       <h2>10. Crianças</h2>
       <p>A aplicação não recolhe dados pessoais.</p>
       <p>Não é dirigida especificamente a menores de 16 anos, podendo ser utilizada sob supervisão responsável.</p>
+    </section>
 
+    <section class="section">
       <h2>11. Funcionalidades Premium</h2>
       <p>Algumas funcionalidades podem estar disponíveis mediante pagamento.</p>
       <ul>
@@ -242,7 +159,9 @@
         <li>Reembolsos seguem exclusivamente as políticas da respetiva loja.</li>
       </ul>
       <p>A aquisição de funcionalidades Premium não implica recolha adicional de dados pessoais.</p>
+    </section>
 
+    <section class="section">
       <h2>12. Limitação importante</h2>
       <p>O Ponto Zero é uma ferramenta de organização financeira pessoal.</p>
       <p>Não fornece:</p>
@@ -253,7 +172,9 @@
         <li>recomendações de investimento</li>
       </ul>
       <p>Todas as decisões financeiras tomadas com base na aplicação são da responsabilidade do utilizador.</p>
+    </section>
 
+    <section class="section">
       <h2>13. Alterações a esta política</h2>
       <p>Esta Política de Privacidade pode ser atualizada para refletir:</p>
       <ul>
@@ -262,32 +183,25 @@
         <li>Novas funcionalidades</li>
       </ul>
       <p>A data da última atualização será sempre indicada no topo do documento.</p>
+    </section>
 
+    <section class="section">
       <h2>14. Contacto</h2>
       <p>Para questões relacionadas com privacidade:</p>
       <p><a href="mailto:suporte.app.pontozero@gmail.com">suporte.app.pontozero@gmail.com</a></p>
+    </section>
 
+    <section class="section">
       <h2>15. Aceitação</h2>
       <p>Ao utilizar a aplicação, o utilizador concorda com esta Política de Privacidade.</p>
-
-      <p class="muted small">Nota: Esta página é informativa e pode ser ajustada conforme requisitos da loja (Google/Apple) e alterações legais.</p>
-    </div>
+      <p class="sub">Nota: Esta página é informativa e pode ser ajustada conforme requisitos da loja (Google/Apple) e alterações legais.</p>
+    </section>
   </main>
 
-  <footer>
-    <div class="wrap footergrid">
-      <div class="small">© <span id="y"></span> Ponto Zero — Portugal</div>
-      <div class="links small">
-        <a href="termos.html">Termos</a>
-        <a href="privacidade.html">Privacidade</a>
-        <a href="cookies.html">Cookies</a>
-        <a href="suporte.html">Suporte</a>
-      </div>
-    </div>
-  </footer>
+  <!-- Rodapé global injetado pelo site.js -->
+  <footer id="site-footer"></footer>
 
-  <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
+  <!-- Script global (cabeçalho + rodapé + página ativa) -->
+  <script src="assets/js/site.js"></script>
 </body>
 </html>
