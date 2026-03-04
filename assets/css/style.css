@@ -3,11 +3,10 @@
   --text:#111827;
   --muted:#6b7280;
   --line:#e5e7eb;
-  --link:#111827;
+  --link:#2563eb;
   --link-muted:#6b7280;
   --max: 980px;
 
-  /* extras para botões/hero */
   --primary:#111827;
   --primary-hover:#374151;
   --soft:#f9fafb;
@@ -25,6 +24,8 @@ body{
   line-height:1.6;
   font-size:16px;
 }
+a{ color: var(--link); }
+a:hover{ text-decoration: underline; }
 
 /* Container */
 .wrap{
@@ -33,7 +34,7 @@ body{
   padding: 26px 18px 60px;
 }
 
-/* Header (estilo “Privacidade”) */
+/* Header (global) */
 .site-top{
   border-bottom: 1px solid var(--line);
   background: #fff;
@@ -46,8 +47,8 @@ body{
   align-items:center;
   justify-content:space-between;
   gap:14px;
+  flex-wrap:wrap;
 }
-
 .brand{
   display:flex;
   align-items:baseline;
@@ -55,14 +56,8 @@ body{
   text-decoration:none;
   color:var(--text);
 }
-.brand .title{
-  font-weight:700;
-  letter-spacing:.2px;
-}
-.brand .tag{
-  font-size:12px;
-  color:var(--muted);
-}
+.brand .title{ font-weight:700; letter-spacing:.2px; }
+.brand .tag{ font-size:12px; color:var(--muted); }
 
 .nav{
   display:flex;
@@ -76,13 +71,13 @@ body{
   font-size:14px;
   padding: 6px 2px;
 }
-.nav a:hover{ color:var(--link); }
+.nav a:hover{ color:var(--text); text-decoration:none; }
 .nav a[aria-current="page"]{
-  color:var(--link);
+  color:var(--text);
   font-weight:600;
 }
 
-/* Page typography */
+/* Typography (páginas internas) */
 h1{
   margin: 22px 0 6px;
   font-size: 34px;
@@ -93,38 +88,32 @@ h1{
   color:var(--muted);
   font-size:13px;
 }
-
-/* Content blocks (leve e espaçado, como a Privacidade) */
-.section{
-  margin-top: 18px;
-  padding-top: 0;
-}
-
-.summary{
-  background: var(--soft);
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  padding: 14px 14px;
-  color: var(--text);
-}
-
 h2{
   margin: 22px 0 10px;
   font-size: 18px;
 }
 p{ margin: 10px 0; }
-
 ul{ margin: 8px 0 10px 18px; }
 li{ margin: 6px 0; color: var(--text); }
-li span.muted{ color: var(--muted); }
+.muted{ color: var(--muted); }
 
-a{ color: #2563eb; }
-a:hover{ text-decoration: underline; }
+/* Caixas leves */
+.summary{
+  background: var(--soft);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 14px;
+  color: var(--text);
+}
 
-/* =========================================================
-   INDEX / LANDING (Hero + botões + secções)
-   ========================================================= */
+/* HR */
+.rule{
+  border:0;
+  border-top: 1px solid var(--line);
+  margin: 28px 0;
+}
 
+/* Landing / Home */
 .hero{
   padding: 54px 0 22px;
   text-align:center;
@@ -136,10 +125,15 @@ a:hover{ text-decoration: underline; }
 }
 .hero .lead{
   margin: 0 auto;
-  max-width: 740px;
+  max-width: 760px;
   font-size: 18px;
   color: var(--muted);
 }
+.hero .muted{
+  margin: 10px auto 0;
+  max-width: 760px;
+}
+
 .cta{
   margin-top: 18px;
   display:flex;
@@ -148,6 +142,7 @@ a:hover{ text-decoration: underline; }
   flex-wrap:wrap;
 }
 
+/* Botões */
 .btn{
   display:inline-flex;
   align-items:center;
@@ -161,7 +156,7 @@ a:hover{ text-decoration: underline; }
   font-weight:600;
   font-size:14px;
   line-height:1;
-  transition: transform .06s ease, background .2s ease, border-color .2s ease;
+  transition: transform .06s ease, background .2s ease, border-color .2s ease, opacity .2s ease;
 }
 .btn:hover{
   background: var(--primary-hover);
@@ -176,39 +171,119 @@ a:hover{ text-decoration: underline; }
   border-color: var(--line);
 }
 .btn.secondary:hover{
+  background:#fff;
   border-color: var(--primary);
-  background: #fff;
 }
 
-/* secções da landing */
+/* Sections (home + internas) */
 .section{
-  margin-top: 24px;
+  margin-top: 34px;
+  padding-top: 10px;
   text-align:left;
 }
-.section h2{
-  margin: 0 0 8px;
-  font-size: 22px;
+
+/* Para secções da Home (centradas) */
+.section-center{
+  text-align:center;
 }
-.section p{
-  margin: 0;
+.section-title{
+  text-align:center;
+  font-size: 26px;
+  margin: 0 0 10px;
+}
+.section-sub{
+  text-align:center;
   color: var(--muted);
-  font-size: 16px;
-  max-width: 860px;
+  margin: 0 auto 16px;
+  max-width: 780px;
+}
+.kicker{
+  display:inline-block;
+  font-size: 12px;
+  color: var(--muted);
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
-/* bloco “card” opcional */
+/* Grid 2 colunas */
+.grid{
+  display:grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+@media (min-width: 860px){
+  .grid{ grid-template-columns: 1fr 1fr; }
+}
+
+/* Cards */
 .card{
   background: var(--soft);
   border: 1px solid var(--line);
   border-radius: var(--radius);
   padding: 16px;
-  margin-top: 18px;
+  text-align:left;
+}
+.card strong{ color: var(--text); }
+.card p{ margin: 8px 0 0; color: var(--muted); }
+
+/* Destaque */
+.highlight{
+  border-left: 4px solid var(--primary);
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 12px;
+  font-weight: 600;
+  text-align:left;
 }
 
-/* =========================================================
-   Footer (com atalhos como na Privacidade)
-   ========================================================= */
+/* Pills (Sobre a app) */
+.pills{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+  margin-top: 12px;
+}
+.pill{
+  display:inline-flex;
+  align-items:center;
+  padding: 6px 10px;
+  font-size: 12px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--text);
+}
 
+/* Steps (se usares em páginas internas) */
+.steps{
+  margin: 10px auto 0;
+  max-width: 760px;
+  text-align:left;
+}
+.steps li{ margin: 10px 0; }
+
+/* FAQ */
+.faq{ margin-top: 14px; }
+.faq details{
+  border: 1px solid var(--line);
+  background: #fff;
+  border-radius: 12px;
+  padding: 12px 14px;
+  margin-top: 10px;
+  text-align:left;
+}
+.faq summary{
+  cursor:pointer;
+  font-weight: 700;
+}
+.faq p{
+  margin: 10px 0 0;
+  color: var(--muted);
+}
+
+/* Footer (global) */
 .site-footer{
   border-top: 1px solid var(--line);
   background:#fff;
@@ -234,9 +309,9 @@ a:hover{ text-decoration: underline; }
   color: var(--link-muted);
   text-decoration:none;
 }
-.footer-links a:hover{ color: var(--link); }
+.footer-links a:hover{ color: var(--text); text-decoration:none; }
 
-/* Pequenos ajustes mobile */
+/* Mobile */
 @media (max-width: 720px){
   .hero{ padding: 42px 0 18px; }
   .hero h1{ font-size: 34px; }
@@ -244,84 +319,5 @@ a:hover{ text-decoration: underline; }
 }
 @media (max-width: 520px){
   h1{ font-size: 28px; }
-  .topbar{ gap:10px; }
   .nav{ gap:10px; }
-}
-
-/* Home sections (para não ficar estilo "documento") */
-.hero{
-  text-align:center;
-  padding: 44px 0 18px;
-}
-.lead{
-  color: var(--muted);
-  font-size: 18px;
-  max-width: 760px;
-  margin: 10px auto 0;
-}
-.cta{ margin-top: 18px; }
-
-.btn{
-  display:inline-block;
-  background:#111827;
-  color:#fff;
-  text-decoration:none;
-  padding: 12px 18px;
-  border-radius: 10px;
-  font-weight:600;
-  font-size:14px;
-}
-.btn:hover{ opacity:.9; }
-
-.section{
-  margin-top: 34px;
-  padding-top: 10px;
-}
-.section .section-title{
-  text-align:center;
-  font-size: 22px;
-  margin: 0 0 8px;
-}
-.section .section-sub{
-  text-align:center;
-  color: var(--muted);
-  margin: 0 auto 16px;
-  max-width: 780px;
-}
-
-.card{
-  background:#f9fafb;
-  border:1px solid var(--line);
-  border-radius: 12px;
-  padding: 16px;
-}
-.card + .card{ margin-top: 14px; }
-
-.grid{
-  display:grid;
-  grid-template-columns: 1fr;
-  gap: 14px;
-}
-@media (min-width: 860px){
-  .grid{ grid-template-columns: 1fr 1fr; }
-}
-
-.kicker{
-  display:inline-block;
-  font-size: 12px;
-  color: var(--muted);
-  letter-spacing: .12em;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
-
-.highlight{
-  border-left: 4px solid #111827;
-  padding-left: 12px;
-  color: var(--text);
-  font-weight: 600;
-  background: #fff;
-  border-radius: 10px;
-  border: 1px solid var(--line);
-  padding: 12px 12px;
 }
