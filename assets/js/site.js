@@ -5,7 +5,8 @@
     { href: "termos.html", label: "Termos", key: "termos" },
     { href: "cookies.html", label: "Cookies", key: "cookies" },
     { href: "privacidade.html", label: "Privacidade", key: "privacidade" },
-    { href: "funcionalidades.html", label: "Funcionalidades", key: "funcionalidades" }
+    { href: "funcionalidades.html", label: "Funcionalidades", key: "funcionalidades" },
+    { href: "index.html#sobre", label: "Sobre a app", key: "sobre" }
   ];
 
   function currentKey() {
@@ -17,6 +18,7 @@
     if (file.startsWith("cookies")) return "cookies";
     if (file.startsWith("privacidade")) return "privacidade";
     if (file.startsWith("funcionalidades")) return "funcionalidades";
+    if (file.startsWith("sobre")) return "sobre";
     return "index";
   }
 
@@ -36,7 +38,8 @@
       { href: "termos.html", label: "Termos" },
       { href: "cookies.html", label: "Cookies" },
       { href: "privacidade.html", label: "Privacidade" },
-      { href: "funcionalidades.html", label: "Funcionalidades" }
+      { href: "funcionalidades.html", label: "Funcionalidades" },
+      { href: "index.html#sobre", label: "Sobre a app" }
     ];
     return links.map(l => `<a href="${l.href}">${l.label}</a>`).join("");
   }
