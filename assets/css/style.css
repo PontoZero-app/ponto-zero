@@ -27,6 +27,12 @@ body{
 a{ color: var(--link); }
 a:hover{ text-decoration: underline; }
 
+img{
+  max-width:100%;
+  height:auto;
+  display:block;
+}
+
 /* Container */
 .wrap{
   max-width: var(--max);
@@ -221,11 +227,18 @@ li{ margin: 6px 0; color: var(--text); }
   background: var(--soft);
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  padding: 16px;
+  padding: 18px;
   text-align:left;
 }
+.card img{
+  width:100%;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background:#fff;
+}
 .card strong{ color: var(--text); }
-.card p{ margin: 8px 0 0; color: var(--muted); }
+.card p{ margin: 8px 0 0; }
+.card .muted{ color: var(--muted); }
 
 /* Destaque */
 .highlight{
