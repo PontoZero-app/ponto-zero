@@ -31,7 +31,6 @@
   }
 
   function footerLinksHtml() {
-    // No teu print do rodapé aparecem estes 5:
     const links = [
       { href: "index.html", label: "Início" },
       { href: "suporte.html", label: "Suporte" },
@@ -52,8 +51,11 @@
       <div class="site-top">
         <div class="topbar">
           <a class="brand" href="index.html" aria-label="Ponto Zero">
-            <span class="title">Ponto Zero</span>
-            <span class="tag">Site oficial</span>
+            <img src="assets/images/icon/app_icon.png" alt="Ícone da app Ponto Zero" class="brand-icon">
+            <div class="brand-text">
+              <span class="title">Ponto Zero</span>
+              <span class="tag">Site oficial</span>
+            </div>
           </a>
           <nav class="nav" aria-label="Navegação">
             ${navHtml()}
