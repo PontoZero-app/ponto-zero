@@ -161,7 +161,6 @@ li{ margin: 6px 0; color: var(--text); }
 .hero{
   padding: 54px 0 22px;
   text-align:center;
-  background: radial-gradient(circle at center, #f8fafc 0%, #ffffff 60%);
 }
 .hero-app-icon{
   width:240px;
