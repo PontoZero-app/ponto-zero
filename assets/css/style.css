@@ -78,9 +78,9 @@ img{
 }
 
 .brand-icon{
-  width:64px;
+  width:72px;
   height:auto;
-  border-radius:18px;
+  border-radius:20px;
   box-shadow:
     0 2px 4px rgba(0,0,0,0.06),
     0 8px 18px rgba(0,0,0,0.08);
