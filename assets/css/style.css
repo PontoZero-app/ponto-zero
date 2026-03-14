@@ -63,10 +63,10 @@ img{
   color:var(--text);
 }
 .brand-icon{
-  width:48px;
-  height:48px;
-  border-radius:12px;
-  flex: 0 0 48px;
+  width:56px;
+  height:56px;
+  border-radius:16px;
+  flex: 0 0 56px;
 }
 .brand-text{
   display:flex;
