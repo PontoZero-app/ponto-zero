@@ -41,13 +41,18 @@ img{
 }
 
 /* Header (global) */
-.site-top{
-  border-bottom:1px solid var(--line);
-  background:#fff;
-  position:sticky;
-  top:0;
-  z-index:100;
+#site-header{
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #fff;
 }
+
+.site-top{
+  border-bottom: 1px solid var(--line);
+  background: #fff;
+}
+
 .topbar{
   max-width: var(--max);
   margin: 0 auto;
@@ -58,6 +63,7 @@ img{
   gap:14px;
   flex-wrap:wrap;
 }
+
 .brand{
   display:flex;
   align-items:center;
@@ -65,6 +71,7 @@ img{
   text-decoration:none;
   color:var(--text);
 }
+
 .brand-icon{
   width:64px;
   height:auto;
@@ -73,11 +80,13 @@ img{
     0 2px 4px rgba(0,0,0,0.06),
     0 8px 18px rgba(0,0,0,0.08);
 }
+
 .brand-text{
   display:flex;
   flex-direction:column;
   line-height:1.1;
 }
+
 .brand .title{
   font-weight:700;
   letter-spacing:.2px;
