@@ -163,12 +163,12 @@ li{ margin: 6px 0; color: var(--text); }
   text-align:center;
 }
 .hero-app-icon{
-  width:110px;
-  margin:0 auto 18px;
-  border-radius:24px;
+  width:160px;
+  margin:0 auto 22px;
+  border-radius:32px;
   box-shadow:
-    0 4px 12px rgba(0,0,0,0.08),
-    0 14px 32px rgba(0,0,0,0.10);
+    0 6px 18px rgba(0,0,0,0.10),
+    0 18px 40px rgba(0,0,0,0.12);
   animation: heroFloat 4.8s ease-in-out infinite;
 }
 .hero h1{
