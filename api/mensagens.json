@@ -6,15 +6,15 @@
     "corpo": "Esta é a primeira mensagem de teste da app Ponto Zero. A partir de agora, todas as novidades e atualizações aparecerão aqui. Obrigado por usares a aplicação — estamos constantemente a trabalhar para te oferecer a melhor experiência na gestão das tuas finanças!"
   },
   {
-    "id": "msg_002",
+    "id": "msg_004",
     "data": "2026-08-06",
-    "titulo": "Nova atualização de segurança disponível",
-    "corpo": "Implementámos melhorias significativas na encriptação e na persistência local dos teus dados financeiros. Certifica-te de que tens a última versão instalada para garantir a máxima proteção das tuas contas e poupanças."
+    "titulo": "Teste 1: Nova Funcionalidade de Orçamentos",
+    "corpo": "Esta é uma mensagem de teste para validar o estado de leitura individual. Ao abrires esta mensagem, o indicador vermelho deverá desaparecer e o ecrã principal atualizar-se-á corretamente."
   },
   {
-    "id": "msg_003",
+    "id": "msg_005",
     "data": "2026-08-06",
-    "titulo": "Dica: Personalização de Atalhos e Ícones",
-    "corpo": "Sabias que os utilizadores Premium podem personalizar os ícones e cores dos principais cabeçotes da aplicação? Explora as opções nas definições e adapta o Ponto Zero totalmente ao teu estilo visual."
+    "titulo": "Teste 2: Relatórios Mensais Automáticos",
+    "corpo": "Segunda mensagem de teste adicionada para verificar o comportamento da lista com múltiplos itens por ler. Testa abrir apenas uma delas e regressa ao ecrã inicial para validar o ponto vermelho."
   }
 ]
