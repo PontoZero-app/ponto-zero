@@ -2,13 +2,25 @@
   {
     "id": "msg_001",
     "data": "2026-08-06",
-    "titulo": "Bem-vindos à nova Caixa de Mensagens!",
-    "corpo": "Esta é a primeira mensagem de teste da app Ponto Zero. A partir de agora, todas as novidades e atualizações aparecerão aqui. Obrigado por usares a aplicação — estamos constantemente a trabalhar para te oferecer a melhor experiência na gestão das tuas finanças!"
+    "titulo": "Bem-vindo ao Ponto Zero!",
+    "corpo": "É um enorme prazer ter-te por cá! O Ponto Zero foi desenhado para te dar total controlo sobre as tuas finanças pessoais de forma simples, privada e segura. Para começares da melhor maneira, recomendamos vivamente que explores o tutorial completo disponível a qualquer momento no separador de Definições. Aproveita para organizar os teus registos e tira o máximo partido da tua nova aplicação de gestão financeira!",
+    "fixa": true,
+    "dataExpiracao": null
   },
   {
     "id": "msg_002",
     "data": "2026-08-06",
+    "titulo": "Bem-vindos à nova Caixa de Mensagens!",
+    "corpo": "Esta é a primeira mensagem oficial da app Ponto Zero. A partir de agora, todas as novidades, atualizações e dicas importantes aparecerão aqui. Obrigado por usares a aplicação — estamos constantemente a trabalhar para te oferecer a melhor experiência na gestão das tuas finanças!",
+    "fixa": true,
+    "dataExpiracao": null
+  },
+  {
+    "id": "msg_003",
+    "data": "2026-08-07",
     "titulo": "Atualização Ponto Zero: Melhorias e Estabilidade",
-    "corpo": "Lançámos uma nova atualização repleta de melhorias internas! Otimizamos a personalização de ícones e cores, melhoramos a estabilidade geral da aplicação e refinámos o desempenho para garantir uma experiência de gestão financeira ainda mais fluida e fiável."
+    "corpo": "Lançámos uma nova atualização repleta de melhorias internas! Otimizamos a personalização de ícones e cores, melhoramos a estabilidade geral da aplicação e refinámos o desempenho para garantir uma experiência de gestão financeira ainda mais fluida e fiável.",
+    "fixa": false,
+    "dataExpiracao": "2026-08-14"
   }
 ]
