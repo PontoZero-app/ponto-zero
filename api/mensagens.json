@@ -22,5 +22,13 @@
     "corpo": "Lançámos uma nova atualização repleta de melhorias internas! Otimizamos a personalização de ícones e cores, melhoramos a estabilidade geral da aplicação e refinámos o desempenho para garantir uma experiência de gestão financeira ainda mais fluida e fiável.",
     "fixa": false,
     "dataExpiracao": "2026-08-14"
+  },
+  {
+    "id": "msg_004",
+    "data": "2026-08-16",
+    "titulo": "Atualização Ponto Zero: Saldos, Empréstimos e Mais!",
+    "corpo": "A nova versão do Ponto Zero já está online! O que há de novo:\n\n• Reconciliação de saldos: Ajusta o saldo das tuas contas correntes de forma direta, com criação automática do movimento de ajuste.\n• Empréstimos: Rácio de prestações pagas corrigido e exibido de forma clara.\n• Poupanças: Maior proteção do saldo inicial com novas instruções visuais.\n• Interface mais legível: Tamanho de letra aumentado nos resumos e diálogos de confirmação uniformizados em toda a app.\n• Atalhos e Fluidez: Atalhos da Home otimizados e formulários mais rápidos e fiáveis.\n\nAtualiza já a tua aplicação para garantires que tens acesso a todas estas melhorias e correções de desempenho!",
+    "fixa": false,
+    "dataExpiracao": "2026-09-15"
   }
 ]
