@@ -1,0 +1,30 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependências (O que estava a causar os 10k+)
+node_modules
+
+# Pastas de Build / Produção
+dist
+dist-ssr
+out
+
+# Ficheiros Locais
+*.local
+
+# Editores e Sistema
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
