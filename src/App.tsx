@@ -3,7 +3,7 @@ import { AppRoutes } from "./router";
 import ScrollToTop from "./components/feature/ScrollToTop";
 import { I18nextProvider } from "react-i18next";
 import i18n from "./i18n";
-
+import AudioPlayer from "./components/AudioPlayer"; // 1. O import da música
 
 function App() {
   return (
@@ -11,6 +11,7 @@ function App() {
       <BrowserRouter basename={__BASE_PATH__}>
         <ScrollToTop />
         <AppRoutes />
+        <AudioPlayer /> {/* 2. O botão renderizado no ecrã */}
       </BrowserRouter>
     </I18nextProvider>
   );
